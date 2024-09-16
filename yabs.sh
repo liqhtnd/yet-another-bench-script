@@ -806,24 +806,22 @@ if [ -z "$SKIP_IPERF" ]; then
 	#   4. location and advertised speed link of the iperf server
 	#   5. network modes supported by the iperf server (IPv4 = IPv4-only, IPv4|IPv6 = IPv4 + IPv6, etc.)
 	IPERF_LOCS=( \
-		"lon.speedtest.clouvider.net" "5200-5209" "Clouvider" "London, UK (10G)" "IPv4|IPv6" \
 		"iperf-ams-nl.eranium.net" "5201-5210" "Eranium" "Amsterdam, NL (100G)" "IPv4|IPv6" \
-		#"speedtest.extra.telia.fi" "5201-5208" "Telia" "Helsinki, FI (10G)" "IPv4" \
-		# AFR placeholder
-		"speedtest.uztelecom.uz" "5200-5209" "Uztelecom" "Tashkent, UZ (10G)" "IPv4|IPv6" \
-		"speedtest.sin1.sg.leaseweb.net" "5201-5210" "Leaseweb" "Singapore, SG (10G)" "IPv4|IPv6" \
-		"la.speedtest.clouvider.net" "5200-5209" "Clouvider" "Los Angeles, CA, US (10G)" "IPv4|IPv6" \
+  		"speed.fiberby.dk" "9201-9240" "Fiberby" "Copenhagen, DK (10G)" "IPv4|IPv6" \
+  		"a110.speedtest.wobcom.de" "5201-5201" "WOBCOM" "Berlin, DE (50G)" "IPv4|IPv6" \
+		"a205.speedtest.wobcom.de" "5201-5201" "WOBCOM" "Frankfurt, DE (50G)" "IPv4|IPv6" \	
+  		"speedtest.iway.ch" "5201-5201" "iWay" "Zürich, CH (10G)" "IPv4|IPv6" \	
 		"speedtest.nyc1.us.leaseweb.net" "5201-5210" "Leaseweb" "NYC, NY, US (10G)" "IPv4|IPv6" \
-		"speedtest.sao1.edgoo.net" "9204-9240" "Edgoo" "Sao Paulo, BR (1G)" "IPv4|IPv6"
+  		"speedtest.sea11.us.leaseweb.net" "5201-5210" "Leaseweb" "SEA, WA, US (10G)" "IPv4|IPv6" \
+  		"speedtest.tyo11.jp.leaseweb.net" "5201-5210" "Leaseweb" "Tokyo, JP (10G)" "IPv4|IPv6" \
+    		"akl.linetest.nz" "5300-5309" "2Degrees" "Auckland, NZ (10G)" "IPv4" \
 	)
 
 	# if the "REDUCE_NET" flag is activated, then do a shorter iperf test with only three locations
 	# (Clouvider London, Clouvider NYC, and Online.net France)
 	if [ ! -z "$REDUCE_NET" ]; then
 		IPERF_LOCS=( \
-			"lon.speedtest.clouvider.net" "5200-5209" "Clouvider" "London, UK (10G)" "IPv4|IPv6" \
-			"speedtest.sin1.sg.leaseweb.net" "5201-5210" "Leaseweb" "Singapore, SG (10G)" "IPv4|IPv6" \
-			"speedtest.nyc1.us.leaseweb.net" "5201-5210" "Leaseweb" "NYC, NY, US (10G)" "IPv4|IPv6" \
+			"iperf-ams-nl.eranium.net" "5201-5210" "Eranium" "Amsterdam, NL (100G)" "IPv4|IPv6" \
 		)
 	fi
 	
