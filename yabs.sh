@@ -806,15 +806,14 @@ if [ -z "$SKIP_IPERF" ]; then
 	#   4. location and advertised speed link of the iperf server
 	#   5. network modes supported by the iperf server (IPv4 = IPv4-only, IPv4|IPv6 = IPv4 + IPv6, etc.)
 	IPERF_LOCS=( \
-		"iperf-ams-nl.eranium.net" "5201-5210" "Eranium" "Amsterdam, NL (100G)" "IPv4|IPv6" \
   		"speed.fiberby.dk" "9201-9240" "Fiberby" "Copenhagen, DK (10G)" "IPv4|IPv6" \
-  		"a110.speedtest.wobcom.de" "5201-5201" "WOBCOM" "Berlin, DE (50G)" "IPv4|IPv6" \
-		"a205.speedtest.wobcom.de" "5201-5201" "WOBCOM" "Frankfurt, DE (50G)" "IPv4|IPv6" \
-  		"speedtest.iway.ch" "5201-5201" "iWay" "Zürich, CH (10G)" "IPv4|IPv6" \
-		"speedtest.nyc1.us.leaseweb.net" "5201-5210" "Leaseweb" "NYC, NY, US (10G)" "IPv4|IPv6" \
-  		"speedtest.sea11.us.leaseweb.net" "5201-5210" "Leaseweb" "SEA, WA, US (10G)" "IPv4|IPv6" \
-  		"speedtest.tyo11.jp.leaseweb.net" "5201-5210" "Leaseweb" "Tokyo, JP (10G)" "IPv4|IPv6" \
-    		"akl.linetest.nz" "5300-5309" "2Degrees" "Auckland, NZ (10G)" "IPv4" \
+    		"iperf-ams-nl.eranium.net" "5201-5210" "Eranium" "Amsterdam, NL (100G)" "IPv4|IPv6" \
+		"a205.speedtest.wobcom.de" "5201-5201" "Wobcom" "Frankfurt, DE (50G)" "IPv4|IPv6" \
+  		"speedtest.wtnet.de" "5200-5209" "wilhelm.tel" "Norderstedt, DE (40G)" "IPv4|IPv6" \
+  		"speedtest.init7.net" "5201-5201" "Init7" "Zurich, CH (20G)" "IPv4|IPv6" \
+    		"89.187.162.1" "5201-5201" "DataPacket" "Singapore, SG (10G)" "IPv4" \
+    		"nyc.speedtest.clouvider.net" "5200-5209" "Clouvider" "New York City, US (10G)" "IPv4|IPv6" \
+  		"speedtest.phx1.us.leaseweb.net" "5201-5210" "Leaseweb" "Phoenix, US (10G)" "IPv4|IPv6" \
 	)
 
 	# if the "REDUCE_NET" flag is activated, then do a shorter iperf test with only three locations
