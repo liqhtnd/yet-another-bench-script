@@ -809,8 +809,8 @@ if [ -z "$SKIP_IPERF" ]; then
 		"iperf-ams-nl.eranium.net" "5201-5210" "Eranium" "Amsterdam, NL (100G)" "IPv4|IPv6" \
   		"speed.fiberby.dk" "9201-9240" "Fiberby" "Copenhagen, DK (10G)" "IPv4|IPv6" \
   		"a110.speedtest.wobcom.de" "5201-5201" "WOBCOM" "Berlin, DE (50G)" "IPv4|IPv6" \
-		"a205.speedtest.wobcom.de" "5201-5201" "WOBCOM" "Frankfurt, DE (50G)" "IPv4|IPv6" \	
-  		"speedtest.iway.ch" "5201-5201" "iWay" "Zürich, CH (10G)" "IPv4|IPv6" \	
+		"a205.speedtest.wobcom.de" "5201-5201" "WOBCOM" "Frankfurt, DE (50G)" "IPv4|IPv6" \
+  		"speedtest.iway.ch" "5201-5201" "iWay" "Zürich, CH (10G)" "IPv4|IPv6" \
 		"speedtest.nyc1.us.leaseweb.net" "5201-5210" "Leaseweb" "NYC, NY, US (10G)" "IPv4|IPv6" \
   		"speedtest.sea11.us.leaseweb.net" "5201-5210" "Leaseweb" "SEA, WA, US (10G)" "IPv4|IPv6" \
   		"speedtest.tyo11.jp.leaseweb.net" "5201-5210" "Leaseweb" "Tokyo, JP (10G)" "IPv4|IPv6" \
