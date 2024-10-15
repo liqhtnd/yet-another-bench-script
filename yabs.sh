@@ -806,13 +806,13 @@ if [ -z "$SKIP_IPERF" ]; then
 	#   4. location and advertised speed link of the iperf server
 	#   5. network modes supported by the iperf server (IPv4 = IPv4-only, IPv4|IPv6 = IPv4 + IPv6, etc.)
 	IPERF_LOCS=( \
-  		"ping.online.net" "5201-5209" "Scaleway" "Paris, FR (100G)" "IPv4" \
-    		"ping6.online.net" "5201-5209" "Scaleway" "Paris, FR (100G)" "IPv6" \
     		"iperf-ams-nl.eranium.net" "5201-5210" "Eranium" "Amsterdam, NL (100G)" "IPv4|IPv6" \
+      		"speedtest.novoserve.com" "5201-5201" "NovoServe" "Amsterdam, NL (40G)" "IPv4|IPv6" \
 		"a205.speedtest.wobcom.de" "5201-5201" "WOBCOM" "Frankfurt, DE (50G)" "IPv4|IPv6" \
-  		"speedtest.wtnet.de" "5200-5209" "wilhelm.tel" "Norderstedt, DE (40G)" "IPv4|IPv6" \
+    		"ping.online.net" "5201-5209" "Scaleway" "Paris, FR (100G)" "IPv4" \
+    		"ping6.online.net" "5201-5209" "Scaleway" "Paris, FR (100G)" "IPv6" \
   		"speedtest.init7.net" "5201-5201" "Init7" "Zurich, CH (20G)" "IPv4|IPv6" \
-    		"89.187.162.1" "5201-5201" "DataPacket" "Singapore, SG (10G)" "IPv4" \
+    		"89.187.162.1" "5201-5201" "DataPacket" "Singapore, SG (20G)" "IPv4" \
       		"speedtest.sin1.sg.leaseweb.net" "5201-5210" "Leaseweb" "Singapore, SG (10G)" "IPv6" \
     		"nyc.speedtest.clouvider.net" "5200-5209" "Clouvider" "New York City, US (10G)" "IPv4|IPv6" \
   		"speedtest.phx1.us.leaseweb.net" "5201-5210" "Leaseweb" "Phoenix, US (10G)" "IPv4|IPv6" \
